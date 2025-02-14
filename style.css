@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.video-container {
+    background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 2, 0.8));
+
+
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 0;
+    background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 2, 0.8));
+    width: 100%;
+    flex-wrap: wrap;
+    position: sticky;
+ 
+
+}
+
+.menu {
+    display: none;
+}
+
+.main-header .logo,
+nav {
+    margin: 0 3rem;
+}
+
+.logo h1 {
+    font-family: "Roboto";
+    font-weight: 900;
+    font-style: 2rem;
+    color: white;
+}
+
+.logo span {
+    color: #ff4521;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+nav{
+    position: relative;
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "open sans";
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #ff4521;
+    transition: 0.3s;
+}
+
+nav ul button {
+    border: none;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    background: #ff4521;
+    color: white;
+    position: relative;
+   
+}
+
+nav ul button:hover {
+    color: red;
+    transform: 0.3s;
+}
+
+.header-titile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 70vh;
+    gap: 20px;
+    color: white;
+   
+
+}
+
+.header-titile span {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "open sans";
+    font-weight: 900;
+    margin-top: 10rem;
+    color: #fff;
+}
+
+.header-titile h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 900;
+
+}
+
+.header-titile button {
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    background: #ff4521;
+    color: white;
+    text-transform: uppercase;
+    max-width: 300px;
+}
+
+.header-titile button:hover {
+    cursor: pointer;
+    background: #db6d57;
+    transition: 0.5s;
+}
+.nav-links {
+    display: block;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px;
+  
+}
+
+.program-title{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.program-title h2{
+ font-size: 2rem;
+ font-family: "roboto";
+ text-transform: uppercase;
+}
+span{
+    color: #ff4521;
+}
+.program-title p{
+    font-family: "open sans";
+    color: gray;
+    font-size: 1.3rem;
+    max-width: 710px;
+}
+/* sectoin Prugramis */
+.program-title h2 , img,p{
+   margin-top: 20px;
+}
+#about{
+width: calc(100%);
+transition: 1s;
+}
+.main-program{
+    margin-top: 50px;
+    display: flex;
+    width: calc(100% );
+    flex-wrap: wrap;
+}
+
+.product{
+    display: flex;
+    gap: 30px;
+    width: calc(50%);
+    margin: 20px 0px;
+}
+.product img{
+    width: 100px;
+    height: 100px;
+}
+.product-titile{
+    display: flex;
+    flex-direction: column;  
+    font-family: "Roboto";
+    font-size: 0.8rem;
+}
+.product-titile h2{
+    padding: 0;
+    margin-top: 25px;
+ 
+}
+.product-titile p{
+    color: gray;
+    max-width: 450px;
+}
+.product-titile a{
+    text-decoration: none;
+    font-family: inherit;
+    color: blue;
+    font-size: inherit;
+}
+
+/* main center  */
+.main-center{
+    padding: 30px;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: "Roboto";
+    /* font-size: 1.5rem; */
+    gap: 20px;
+}
+.main-center button{
+    border: none;
+    background: #ff4521;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+   width: calc(20%);
+   margin: 0 auto;
+
+}
+.main-center h2{
+    text-transform: uppercase;
+}
+.main-center p{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-center-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),url("./images/gym-image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 50px;
+ color: white;
+ display: flex;
+ flex-direction: column;
+   
+}
+
+/* Class Section */
+#Classes{
+    margin-top: 100px;
+}
+.classes-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.classes-header-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "open sans";
+    font-size: 1.5rem;
+}
+.classes-header h2{
+text-transform: uppercase;
+}
+.classes-header-title p{
+color: gray;
+max-width: 750px;
+}
+.main-traning-class{
+    margin-top: 50px;
+    display: flex;
+  gap: 35px;
+}
+.traning-class{
+    display: flex;
+    flex-direction: column;
+}
+.tranin-class-des{
+    display: flex;
+    padding: 15px;
+    box-shadow: 3px 5px 7px 9px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+.tranin-class-des span{
+    color: black;
+    font-family: "open sans";
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.traning-class button{
+    width: 100%;
+    background: 10px;
+    border: none;
+    background: #ff4521;
+    border-radius: 5px;
+    color: #fff;
+    padding: 20px;
+    font-family: "open sans";
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.second-training-class{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+}
+.second-training-class img{
+    max-width: calc(100%);
+    border-radius: 10px;
+}
+.second-training-class span{
+    color: black;
+    font-weight: 900;
+    font-family: "open sans";
+    font-size: 1.7rem;
+    margin-top: 10px;
+}
+.second-training-class p{
+    max-width: 650px;
+    font-family: "open sans";
+    color: gray;
+   font-size: 0.8rem;
+}
+.second-training-class button{
+    max-width: 200px;
+    border: none;
+    background: #ff4521;
+    color: #fff;
+    padding: 10px;
+    font-family: "open sans";
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+/* Section schudule */
+#Schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "open sans";
+    align-content: center;
+    margin-top: 80px;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)),url("./images/coach-gym.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    gap: 25px;
+    height: 120vh;
+    padding: 20px;
+    position: relative;
+}
+.main-schedule-des h2{
+  text-transform: uppercase;
+  color: #fff;
+}
+.main-schedule-des p{
+  max-width: 600px;
+    color: #fff;
+}
+.days{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-family: "roboto";
+    color: #fff;
+    flex-wrap: wrap;
+}
+.days li:hover{
+    color: #ff4521;
+}
+table{
+    border-collapse: collapse;
+     color: #fff;
+     width: calc(70%);
+}
+table th, td{
+   padding: 25px;
+    border: 2px solid;
+}
+
+/* Expert */
+#Expert{
+    margin-top: 50px;
+    padding: 30px;
+}
+.main-expert-dec{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: justify;
+   font-family: "open sans";
+   font-size: 1.5rem;
+}
+.main-expert-dec p{
+    font-size: 1rem;
+    color: gray;
+    max-width: 590px;
+    text-align: center;
+}
+
+.mans{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 50px;
+    gap: 10px;
+}
+.person{
+    font-family: "open sans";
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.1);
+   gap: 10px;
+   justify-content: center;
+   align-items: self-start;
+   text-align: start;
+   border-radius: 5px;
+}
+
+.person img{
+    width: 300px;
+    height: 280px;
+    margin: 0 auto;
+}
+.person p{
+    color: gray;
+    font-size: 1rem;
+    max-width: 300px;
+    text-align: start;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.social-icons{
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#contact{
+    margin-top: 50px;
+}
+.main-contacts{
+    display: flex;
+   width: 100%;
+}
+.map{
+    width: calc(100%);
+}
+.contact-form{
+    padding: 50px;
+    width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url("./images/contact-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form{
+    display: grid;
+    font-family: "open sans";
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    max-width: calc(80%);
+    position: relative;
+   /* margin-top: 20px; */
+   margin-left: 20px;
+}
+form input{
+    padding: 20px;
+   
+}
+form input,textarea, button{
+    margin-top: 20px;
+    width: 100%;
+}
+form textarea{
+    padding: 20px 30px;
+}
+form button{
+    padding:  15px;
+    border: none;
+    background: #ff4521;
+    color: #fff;
+    max-width: 150px;
+
+}
+#name{
+    grid-column: 1 / span 1;
+    
+}
+#email{
+    grid-column: 2 / span 2;
+}
+#subject{
+    grid-column: 1 / span 4;
+   
+    
+}
+#message{
+    grid-column: 1 / span 4;
+   
+}
+footer{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: "open sans";
+}
+
+@media (min-width:375px) and (max-width:800px) {
+    .header-titile span{
+        margin-top: 5rem;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .main-header {
+        padding: 1rem;
+    }
+
+    .header-titile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin-top: 1.6rem;
+
+    }
+
+    .header-titile h1,
+    button {
+        font-size: 3rem;
+        padding: 10px 15px;
+    }
+
+    .header-titile button {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+    .main-header {
+        width: calc(100%);
+        position: relative;
+    }
+    
+    .mobile {
+        display: none;
+        position: absolute;
+        background: linear-gradient(rgba(255, 0, 0, 0.9), rgba(0, 0, 2, 0.9));
+        top: 100%;
+        width: calc(90%);
+        padding: 0;
+        margin: 0;
+        transform: translateY(0%);
+        transition: transform 1s  ease-in-out;
+    }
+   
+
+    .mobile ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .mobile ul li{
+        border-bottom: 1px solid white;
+        width: 100%;
+        padding: 10px 0;
+    }
+.mobile button{
+    width: 100%;
+    inset: 0 0 0 0;
+}
+
+  
+
+    .menu{
+        display: flex;
+        position: absolute;
+        right: 0%;
+        top: -5%;
+        font-size: 2.5rem;
+        color: white;
+        position: relative;
+        transform: translateY(-30%);
+        transition: transform 1s  ease-in-out;
+    }
+
+    .plus{
+        transform: translateY(-50%);
+        transition: transform 1s  ease-in;
+        right: 5%;
+        top: -15%;
+        position: absolute;
+    }
+
+    .fa-xmark {
+     position: absolute; 
+     display: none; 
+     transform: translateY(-50%);
+        transition: transform 1s  ease-in-out;
+    right: 0;
+    top: -15%;
+    }
+/* Products Responsive */
+.container{
+    margin-top: 50px;
+width: calc(100%);
+padding: 0;
+
+}
+.main-program{
+display: flex;
+align-items: self-start;
+}
+.product{
+    width: calc(100%);
+   display: flex;
+   justify-content: flex-start;
+   align-items: self-start;
+   padding: 20px;
+}
+  .main-center button{
+    width: calc(100%);
+  }
+/* Classes Training */
+.main-traning-class{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.traning-class button{
+    padding: 10px;
+    font-size: 1rem;
+}
+.second-training-class button{
+    padding: 10px;
+    font-size: 1rem;
+}
+/* classes schdule */
+.main-schedule-des{
+    width: calc(40% - 20px);
+    position: relative;
+}
+table{
+    width: calc(40% - 20px);
+    
+}
+table th, td{
+    padding: 10px;
+}
+.main-schedule-des{
+width: calc(100%);
+}
+/* people */
+.mans{
+display: grid;
+grid-template-columns: 1fr;
+}
+.main-contacts{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width: 100%;
+   
+}
+form input, textarea ,button{
+    width: 100%;
+    padding: 20px;
+}
+form button{
+    font-size: 0.8rem;
+}
+
+
+}
