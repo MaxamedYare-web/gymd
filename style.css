@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     /* test */
-    background: blue;
+ 
 }
 
 header {
@@ -13,7 +13,7 @@ header {
     height: 100vh;
     position: relative;
     /* test */
-    background: red;
+  
 }
 
 .video-container {
